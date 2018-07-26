@@ -1,19 +1,19 @@
 
 # username: 您的的用户名(一般是手机号码)
-username: "13888888888"
+username: ""
 
 # password: 密码
-password: "*****"
+password: ""
 
 # date: 挂号日期
-date: "2018-01-01"
+date: "2018-08-02"
 
 
 # hospitalId: 医院id
-hospitalId: "162"
+hospitalId: "34"
 
-# departmentId: 科室id
-departmentId: "200002248"
+# departmentId: 科室id  牙科：200004185
+departmentId: "200004185"
 
 # 关于如何获取 hospitalId 和 departmentId
 # 1. 打开挂号页面
@@ -27,12 +27,24 @@ dutyCode: "1"
 
 # patientName: 患者姓名
 # 若是自己挂号可为空
-patientName: "曹操"
+patientName: ""
+
+# childrenName：患儿姓名
+# 若非儿科可为空
+childrenName: ""
+
+# childrenBirthday：患儿生日
+# 若非儿科可为空
+childrenBirthday: ""
+
+# childrenGender：患儿性别 男(1) 女(2)
+# 若非儿科可为空
+childrenGender: ""
 
 # doctorName: 医生姓名
 # 不填写的话默认选最好的医生
 # 填写后若这个医生没有号，会自动选其余号中最好的医生
-doctorName: "扁鹊"
+doctorName: ""
 
 # DebugLevel: 调试等级
 # 支持的调试等级有 debug/info/warning/error/critical

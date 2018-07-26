@@ -63,6 +63,9 @@ class Config(object):
                 self.patient_name = data["patientName"]
                 self.doctorName = data["doctorName"]
                 self.patient_id = int()
+                self.children_name = data["childrenName"]
+                self.children_birthday = data["childrenBirthday"]
+                self.children_gender = data["childrenGender"]
                 try:
                     self.useIMessage = data["useIMessage"]
                 except KeyError:
@@ -265,6 +268,10 @@ class Guahao(object):
         patient_id = self.config.patient_id
         doctor_id = str(doctor['doctorId'])
 
+        children_name = self.config.children_name
+        children_birthday = self.config.children_birthday
+        children_gender = self.config.children_gender
+
         payload = {
             'dutySourceId': duty_source_id,
             'hospitalId': hospital_id,
@@ -273,9 +280,12 @@ class Guahao(object):
             'patientId': patient_id,
             'hospitalCardId': "",
             'medicareCardId': "",
-            "reimbursementType": "10",          # 报销类型
-            'smsVerifyCode': sms_code,          # TODO 获取验证码
-            'childrenBirthday': "",
+            "reimbursementType": "10",              # 报销类型
+            'smsVerifyCode': sms_code,              # TODO 获取验证码
+            'childrenName': children_name,          # 患儿姓名
+            'cidType': 2,                           # 
+            'childrenBirthday': children_birthday,  # 患儿生日 2018-01-01
+            'childrenGender': children_gender,      # 患儿性别 男(1) 女(2)
             'isAjax': True
         }
         response = self.browser.post(self.confirm_url, data=payload)
