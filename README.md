@@ -79,6 +79,18 @@ dutyCode: "1"
 # 若是自己挂号可为空
 patientName: "曹操"
 
+# childrenName：患儿姓名
+# 若非儿科可为空
+childrenName: "曹冲"
+
+# childrenBirthday：患儿生日
+# 若非儿科可为空
+childrenBirthday: "2018-01-01"
+
+# childrenGender：患儿性别 男(1) 女(2)
+# 若非儿科可为空
+childrenGender: "1"
+
 # doctorName: 医生姓名
 # 不填写的话默认选最好的医生
 # 填写后若这个医生没有号，会自动选其余号中最好的医生
