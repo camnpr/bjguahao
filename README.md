@@ -107,6 +107,9 @@ useIMessage: "false"
 useQPython3: "false"
 ```
 
+## 成功挂号：首都医科大学附属北京儿童医院 口腔科 牙科
+![image](/img/bingo.png)
+
 ## 文档
 
 [文档](doc.md) 中有比较详细的接口分析和装包。
