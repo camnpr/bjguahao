@@ -419,7 +419,7 @@ class Guahao(object):
                     logging.info("没号了,但截止时间未到，重试中")
                     time.sleep(1)
             elif doctor == "NotReady":
-                logging.info("好像还没放号？重试中")
+                logging.info("此医生好像还没放号？重试中")
                 time.sleep(1)
             else:
                 sms_code = self.get_sms_verify_code()               # 获取验证码
